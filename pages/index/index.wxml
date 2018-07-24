@@ -1,0 +1,45 @@
+<!--index.wxml-->
+<view class='container'>
+  <view class='contain-mine contain-box'>
+    <view class='contain-mine-box'>
+      <image class='contain-mine-avatar' src='http://img1.imgtn.bdimg.com/it/u=615225602,200453327&fm=27&gp=0.jpg'></image> 
+      <view class='contain-mine-nickName'>昵称</view>
+    </view>
+    <view class='contain-mine-box'>
+      <view class='contain-mine-date'> 
+        <view class='contain-mine-month'>7月</view>
+        <view class='contain-mine-dateIn'>
+          <view class='contain-mine-dateInner'>
+            <view class='contain-mine-dateInner-content'>
+              <view>17</view>
+              <view>星期二</view>
+              <view>六月初五</view>
+            </view>
+          </view>
+        </view>
+      </view>
+    </view>
+    <view class='contain-mine-box'>
+      <image class='contain-mine-setBtn' src='../../assets/add.png' bindtap='add21Day'></image>
+      <image class='contain-mine-setBtn' src='../../assets/contact.png'></image>
+    </view>
+    <view class='contain-mine-after'></view>
+    <view class='contain-mine-before'></view>
+  </view>
+  <view class='contain-item contain-box'>
+    <image class='contain-item-img' mode='widthFix' src='../../assets/bgPic.png'></image>
+    <view class='contain-item-box'>
+      <view class='contain-item-welecom'>
+        <view class='contain-item-welecomName'>HI 昵称</view><view class='contain-item-welecomtit'>，欢迎使用21天计划小程序</view>
+      </view>
+      <view class='contain-item-guide'><text>●</text>　<text>点击+号，创建一个21天计划，坚持每天打卡</text></view>
+      <view class='contain-item-guide'><text>●</text>　<text>点击"发现"，加入一个21天计划，相互监督</text></view>
+      <view class='contain-item-slogan'>好习惯，好人生！命好不如习惯好！</view>
+      <view class='contain-item-add' bindtap='add21Day'>
+        <image src='../../assets/add1.png'></image>
+      </view>
+    </view>
+  </view>
+</view>
+
+<!-- <rich-text nodes="{{html}}"></rich-text> -->

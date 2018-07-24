@@ -1,0 +1,86 @@
+<!--pages/join21days/index.wxml-->
+<view class='contain-item contain-box'>
+  <view class='contain-item-imgBox'>
+    <image class='contain-item-img' mode='widthFix' src='../../assets/bgPic.png'></image>
+    <view class='contain-item-box-cover'>
+      <progress percent="66" stroke-width="4" color="#FC7D00" active/>
+      <view class='contain-item-box-cover-progress'>
+        <view>第14天/21天</view>
+        <view bindtap='about21Day'><image src='../../assets/clock.png'></image><text>签到规则</text></view>
+      </view>
+    </view>
+  </view>
+  <view class='contain-item-box'>
+    <view class='contain-item-box-tit'>每天拥抱一分钟</view>
+    <view class='contain-item-box-des'>加强人与人之间的连接，坚持每天拥抱爱人一分钟，拥抱孩子一分钟，拥抱的时候要全身心地投入，深情地拥抱。</view>
+  </view>
+</view>
+
+<view class='contain-box'>
+  <view class='contain-item-box'>
+   <view class='contain-item-detail'>
+      <image src='http://img1.imgtn.bdimg.com/it/u=615225602,200453327&fm=27&gp=0.jpg'></image>
+      <view>拇指姑凉</view>
+      <view>07-26 10:58 发起</view>
+    </view>
+   <view class='contain-item-detail contain-item-detail-in'>
+      <view class='contain-item-detail-inheaderBox'>
+        <scroll-view scroll-x style="width: 100%">
+          <view style='width:{{64*header.length}}rpx'>
+            <image wx:for='{{header}}' src='{{item}}'></image>
+          </view>
+        </scroll-view>
+      </view>
+      <view>141人参与</view>
+    </view>
+   <view class='contain-item-detail contain-item-detail-mine'>
+      <image src='http://p1.qqyou.com/touxiang/UploadPic/2017-8/13/s8af8e86c8aa64725b0d21f7017ce145f.jpg'></image>
+      <view>我已累计坚持 0 天</view>
+      <view>排名 0</view>
+    </view>
+  </view>
+</view>
+
+<view class='contain-box'>
+  <view class="weui-tab">
+        <view class="weui-navbar">
+            <block wx:for="{{tabs}}" wx:key="*this">
+                <view id="{{index}}" class="weui-navbar__item {{activeIndex == index ? 'weui-bar__item_on' : ''}}" bindtap="tabClick">
+                    <view class="weui-navbar__title">{{item}}</view>
+                </view>
+            </block> 
+        </view>
+        <view class="weui-tab__panel">
+          <view class="weui-tab__content" hidden="{{activeIndex != 0}}">
+            <view class='noOne'>
+              <view>快去邀请好友一起来参加吧</view>
+              <view>相互监督养成好习惯</view>
+            </view>
+          </view>
+          <view class="weui-tab__content" hidden="{{activeIndex != 1}}">
+            <view class='noOne'>
+              <view>快去邀请好友一起来参加吧</view>
+              <view>相互监督养成好习惯</view>
+            </view>
+          </view>
+          <view class="weui-tab__content" hidden="{{activeIndex != 2}}">
+            <view class='noOne'>
+              <view>快去邀请好友一起来参加吧</view>
+              <view>相互监督养成好习惯</view>
+            </view>
+          </view>
+        </view>
+    </view>
+</view>
+
+<view class='contain-nav'>
+  <view><image src='../../assets/mine1.png'></image>
+  <view>我的</view></view>
+  <view><image src='../../assets/share.png'></image>
+  <view>分享</view></view>
+  <view bindtap='qrcode'><image src='../../assets/qrcode.png'></image>
+  <view>二维码</view></view>
+  <view><image src='../../assets/date.png'></image>
+  <view>日程</view></view>
+  <view><button plain>加入计划</button></view>
+</view>

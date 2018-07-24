@@ -1,0 +1,64 @@
+{
+	"description": "项目配置文件。",
+	"packOptions": {
+		"ignore": []
+	},
+	"setting": {
+		"urlCheck": false,
+		"es6": true,
+		"postcss": true,
+		"minified": true,
+		"newFeature": true
+	},
+	"compileType": "miniprogram",
+	"libVersion": "2.2.0",
+	"appid": "wx4f6ded5582a501ea",
+	"projectname": "21day-%E4%BB%BF%E5%8A%9F%E8%83%BD",
+	"isGameTourist": false,
+	"condition": {
+		"search": {
+			"current": -1,
+			"list": []
+		},
+		"conversation": {
+			"current": -1,
+			"list": []
+		},
+		"plugin": {
+			"current": -1,
+			"list": []
+		},
+		"game": {
+			"currentL": -1,
+			"list": []
+		},
+		"miniprogram": {
+			"current": 3,
+			"list": [
+				{
+					"id": 0,
+					"name": "edit",
+					"pathName": "pages/edit21days/index",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "discover",
+					"pathName": "pages/discover/index",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "join",
+					"pathName": "pages/join21days/index",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "qrcode",
+					"pathName": "pages/qrcode/index"
+				}
+			]
+		}
+	}
+}

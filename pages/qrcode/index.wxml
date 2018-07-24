@@ -1,0 +1,10 @@
+<!--pages/qrcode/index.wxml-->
+<view class="container">
+  <image src="{{shareImage}}" class="share-image"></image>
+  <canvasdrawer painting="{{painting}}" class="canvasdrawer" bind:getImage="eventGetImage"/>
+  <view class='btnBox'>
+  <button bind:tap="share" plain>分享</button>
+  <button bind:tap="eventDraw" plain>换一个</button>
+  <button bind:tap="eventSave" plain>保存</button>
+  </view>
+</view>

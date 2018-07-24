@@ -1,0 +1,34 @@
+<!--pages/discover/index.wxml-->
+<view class="page__bd">
+    <view class="weui-tab">
+        <view class="weui-navbar">
+            <block wx:for="{{tabs}}" wx:key="*this">
+                <view id="{{index}}" class="weui-navbar__item {{activeIndex == index ? 'weui-bar__item_on' : ''}}" bindtap="tabClick">
+                    <view class="weui-navbar__title">{{item}}</view>
+                </view>
+            </block> 
+        </view>
+        <view class='discover-setout'>
+          <view class='discover-setout-btn {{isClick?"active":""}} {{sortOfTimetop?"onclick":"onclicks"}}' bindtap='sortOfTime'> <text>时间</text> <text> ▲</text><text>▼</text></view>
+          <view class='discover-setout-btn {{isClick?"":"active"}} {{sortOfPersontop?"onclick":"onclicks"}}' bindtap='sortOfPerson'><text>参与</text> <text> ▲</text><text>▼</text>　|　</view>
+        </view>
+        <view class="weui-tab__panel">
+          <view class="weui-tab__content" hidden="{{activeIndex != 0}}">
+            <navigator class='contain-item contain-box' wx:for="{{item}}" url='/pages/join21days/index'>
+              <image class='contain-item-img' mode='widthFix' src='../../assets/bgPic.png'></image>
+              <view class='contain-item-box'>
+                <view class='contain-item-tit'>好习惯，好人生！命好不如习惯好！</view>
+                <view class='contain-item-detail'>
+                  <image src='http://img1.imgtn.bdimg.com/it/u=615225602,200453327&fm=27&gp=0.jpg'></image>
+                  <view>拇指姑凉</view>
+                  <view>141人参加</view>
+                  <view>发起　</view>
+                </view>
+              </view>
+            </navigator>
+          </view>
+          <view class="weui-tab__content" hidden="{{activeIndex != 1}}"></view>
+          <view class="weui-tab__content" hidden="{{activeIndex != 2}}"></view>
+        </view>
+    </view>
+</view>

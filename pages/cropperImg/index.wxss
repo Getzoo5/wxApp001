@@ -1,0 +1,18 @@
+/* pages/cropperImg/index.wxss */
+@import "../../common/style.wxss";
+
+.cropper{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.cropper-buttons{
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.95);
+  color: #04b00f;
+}

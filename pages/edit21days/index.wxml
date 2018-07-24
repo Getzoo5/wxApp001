@@ -1,0 +1,114 @@
+<!--pages/edit21days/index.wxml-->
+
+  <view class='contain-item contain-box'>
+    <view class="weui-flex">
+        <view><view class="placeholder">封面</view></view>
+        <view class="weui-flex__item"><view class="placeholder">
+          <image bindtap='ChooseImg' src='{{coverImg?coverImg:"../../assets/add2.png"}}' mode='widthFix'></image>
+        </view></view>
+    </view>
+    <view class="weui-flex">
+        <view><view class="placeholder">标题</view></view>
+        <view class="weui-flex__item"><view class="placeholder">
+          <input placeholder='请输入标题' placeholder-style='color:#CBCBCB'></input>
+        </view></view>
+    </view>
+    <view class="weui-flex">
+        <view><view class="placeholder">描述</view></view>
+        <view class="weui-flex__item"><view class="placeholder">
+          <textarea placeholder='请输入描述' placeholder-style='color:#CBCBCB'></textarea>
+        </view></view>
+    </view>
+    <view class="weui-flex">
+        <view><view class="placeholder">奖励</view></view>
+        <view class="weui-flex__item"><view class="placeholder">
+          <input placeholder='请编辑奖励说明（选填）' placeholder-style='color:#CBCBCB'></input>
+        </view></view>
+    </view>
+    <view class="weui-flex">
+        <view><view class="placeholder">类型</view></view>
+        <view class="weui-flex__item"><view class="placeholder">
+          <picker bindchange="bindPickerChange" value="{{pickerindex}}" range="{{picker}}">
+            <view class="picker">
+              {{picker[pickerindex]}}
+            </view>
+          </picker>
+        </view></view>
+    </view>
+  </view>
+
+  <view class='contain-box placeholderright'>
+    <view class="weui-flex">
+        <view><view class="placeholder">计划开始时间</view></view>
+        <view class="weui-flex__item"><view class="placeholder">
+        <picker mode="date" value="{{date}}" start="2015-09-01" end="2017-09-01" bindchange="bindDateChange">
+          <view class="picker">
+            {{date}}
+          </view>
+        </picker>
+        </view></view>
+    </view>
+    <view class="weui-flex">
+        <view><view class="placeholder">计划结束时间</view></view>
+        <view class="weui-flex__item"><view class="placeholder">
+        <picker mode="date" value="{{dateEnd}}" start="2015-09-01" end="2017-09-01" bindchange="bindDateEndChange">
+          <view class="picker">
+            <text>（默认21天） </text> {{dateEnd}}
+          </view>
+        </picker>
+        </view></view>
+    </view>
+  </view>
+
+  <view class='contain-box placeholderright'>
+    <view class="weui-flex">
+        <view><view class="placeholder">每日签到开始时间</view></view>
+        <view class="weui-flex__item"><view class="placeholder">
+        <picker mode="time" value="{{time}}" bindchange="bindTimeChange">
+          <view class="picker">
+            {{time}}
+          </view>
+        </picker>
+        </view></view>
+    </view>
+    <view class="weui-flex">
+        <view><view class="placeholder">每日签到结束时间</view></view>
+        <view class="weui-flex__item"><view class="placeholder">
+        <picker mode="time" value="{{timeEnd}}" bindchange="bindTimeEndChange">
+          <view class="picker">
+            <text>（默认全天） </text> {{timeEnd}}
+          </view>
+        </picker>
+        </view></view>
+    </view>
+  </view>
+
+  <view class='contain-box placeholderright'>
+    <view class="weui-flex">
+        <view><view class="placeholder">每日签到提醒时间</view></view>
+        <view class="weui-flex__item"><view class="placeholder">
+        <picker mode="time" value="{{timeCall}}" bindchange="bindTimeCallChange">
+          <view class="picker">
+            <text>（默认） </text> {{timeCall}}
+          </view>
+        </picker>
+        </view></view>
+    </view>
+  </view>
+  <view class='contain-box placeholderright'>
+    <view class="weui-flex">
+        <view><view class="placeholder">图文签到（默认开启）</view></view>
+        <view class="weui-flex__item"><view class="placeholder">
+          <switch checked bindchange="switchChange"/>
+        </view></view>
+    </view>
+  </view>
+  <view class='contain-box placeholderright'>
+    <view class="weui-flex">
+        <view><view class="placeholder">仅自己可见（默认关闭）</view></view>
+        <view class="weui-flex__item"><view class="placeholder">
+          <switch bindchange="switch2Change"/>
+        </view></view>
+    </view>
+  </view>
+  <button class='weui-btn button-hover' type="primary" plain>完成</button>

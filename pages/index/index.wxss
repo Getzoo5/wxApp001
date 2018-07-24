@@ -1,0 +1,218 @@
+/**index.wxss**/
+.contain-box{
+  margin: 40rpx 30rpx;
+  border-radius: 22rpx;
+  box-shadow: 0 0 1px 1px #D8D8D8
+}
+.contain-mine{
+  background: #fff;
+  padding: 40rpx;
+  position: relative;
+  margin-top: 20rpx
+}
+.contain-mine::after,.contain-mine::before{
+  width: 30rpx;
+  height: 30rpx;
+  border-radius: 50%;
+  content: '';
+  position: absolute;
+  background: #DEDEDE;
+  top: 12rpx;
+  box-shadow: 0 1px 2px 1px #B2B2B2 inset
+}
+.contain-mine-after,.contain-mine-before{
+  width: 10rpx;
+  height: 46rpx;
+  position: absolute;
+  top: -18rpx;
+  background: #fff;
+  z-index: 5;
+  border-radius: 6rpx;
+  box-shadow: 0 0px 2px 1px #cfcfcf,0 2px 1px 0px #C6C6C6 inset
+}
+.contain-mine::after,.contain-mine-after{
+  left: 30%;
+  transform: translateX(-50%)
+}
+.contain-mine::before  ,.contain-mine-before{
+  right: 30%;
+  transform: translateX(50%)
+}
+
+.contain-mine-box{
+  display: inline-block;
+  text-align: center;
+  vertical-align: top
+}
+
+.contain-mine-box:nth-of-type(1),
+.contain-mine-box:nth-of-type(3){
+  width: 25%;
+  padding: 20rpx 0
+}
+.contain-mine-box:nth-of-type(2){
+  width: 50%;
+}
+.contain-mine-box:nth-of-type(3){
+  padding-left: 30rpx;
+  box-sizing: border-box
+}
+.contain-mine-avatar{
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 50%
+}
+.contain-mine-nickName{
+  font-size: 28rpx;
+  line-height: 180%;
+  font-weight: 600
+}
+.contain-mine-date{
+  display: inline-block;
+  width: 48%;
+  height: 200rpx;
+  background: #fff;
+  box-sizing: border-box;
+  border-bottom: 4rpx solid #C7C7C7;
+  box-shadow: -.5px 1px 2px .3px #ededed;
+  padding-top: 6rpx
+}
+
+.contain-mine-month{
+  height: 42rpx;
+  font-size: 22rpx;
+  line-height: 42rpx;
+  font-weight: 600;
+  position: relative;
+  background: #EEEEEE;
+  color: #3C3C3C;
+  margin: 0 8rpx;
+}
+
+.contain-mine-month::after,.contain-mine-month::before{
+  content: '·';
+  font-weight: 400;
+  font-size: 42rpx;
+  height: 42rpx;
+  line-height: 42rpx;
+  width: 42rpx;
+  position: absolute;
+  top: 0;
+  color: #727272
+}
+.contain-mine-month::after{
+  left: 0;
+}
+.contain-mine-month::before{
+  right: 0;
+}
+.contain-mine-dateIn{
+  width: 100%;
+  height: 150rpx;
+  background: #EEEEEE
+}
+.contain-mine-dateInner{
+  width: 100%;
+  height: 140rpx;
+  box-shadow: 0px 2px 3px 0px #ededed;
+  border-bottom-right-radius: 30%;
+  border-bottom: 4rpx solid #C7C7C7;
+  background: #fff;
+  position: relative;
+}
+.contain-mine-dateInner-content{
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  color: #F5C656;
+  padding: 6rpx
+}
+.contain-mine-dateInner-content>view:nth-of-type(1){
+  color: #F5B300;
+  font-size: 44rpx;
+}
+.contain-mine-dateInner-content>view:nth-of-type(2){
+  font-size: 14rpx;
+  padding: 0 0 16rpx
+}
+.contain-mine-dateInner-content>view:nth-of-type(3){
+  font-size: 16rpx;
+}
+.contain-mine-setBtn{
+  width: 54rpx;
+  height: 54rpx;
+  display: block;
+  margin: auto
+}
+.contain-mine-setBtn:nth-of-type(1){
+  margin-bottom: 40rpx
+}
+
+.contain-item{
+  background: #fff;
+}
+.contain-item-img{
+  width: 100%;
+  display: block;
+  border-top-left-radius: 22rpx;
+  border-top-right-radius: 22rpx;
+}
+.contain-item-box{
+  padding: 30rpx 40rpx;
+  position: relative
+}
+
+.contain-item-welecom{
+  font-size: 32rpx;
+  margin-bottom: 20rpx;
+  text-align: center;
+  font-weight: 600
+}
+.contain-item-welecomName{
+  width: 120rpx;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow:ellipsis;
+  display: inline-block;
+  vertical-align: text-top;
+  text-align: right
+}
+.contain-item-welecomtit{
+  display: inline-block;
+  vertical-align: text-top;
+}
+
+.contain-item-guide{
+  font-size: 22rpx;
+  line-height: 5rpx;
+}
+.contain-item-guide text:last-of-type{
+  line-height: 180%;
+  font-size: 26rpx;
+  color: #AEAEAE
+}
+.contain-item-slogan{
+  font-size: 32rpx;
+  text-align: center;
+  padding-top: 10rpx;
+  padding-bottom: 40rpx;
+  font-weight: 600
+}
+
+.contain-item-add{
+  width: 70rpx;
+  height: 70rpx;
+  border-radius: 50%;
+  background: #fff;
+  position: absolute;
+  bottom: -35rpx;
+  left: 50%;
+  transform: translateX(-50%);
+  box-shadow: 0 .5px 1px 1px #D8D8D8;
+  box-sizing: border-box
+}
+.contain-item-add image{
+  width: 70rpx;
+  height: 70rpx;
+  display: block
+}

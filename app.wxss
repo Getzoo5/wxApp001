@@ -1,0 +1,11 @@
+/**app.wxss**/
+.container{
+  width: 100%;
+  overflow: hidden
+}
+
+page{
+  background: #E8E8E8;
+  color: #333
+}
+@import 'utils/weui.wxss'

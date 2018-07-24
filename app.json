@@ -1,0 +1,35 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/discover/index",
+    "pages/edit21days/index",
+    "pages/join21days/index",
+    "pages/qrcode/index",
+    "pages/cropperImg/index"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#E8E8E8",
+    "navigationBarTitleText": "21天计划",
+    "navigationBarTextStyle":"black"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "assets/mine.png",
+        "selectedIconPath": "assets/mine-h.png"
+      },
+      {
+        "pagePath": "pages/discover/index",
+        "text": "发现",
+        "iconPath": "assets/discover.png",
+        "selectedIconPath": "assets/discover-h.png"
+      }
+    ],
+    "color": "#d5d5d5",
+    "selectedColor": "#333",
+    "borderStyle": "white"
+  }
+}
